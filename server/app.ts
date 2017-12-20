@@ -15,14 +15,7 @@ app.set('port', (process.env.PORT || 3000));
 app.use('/', express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-let mongodbURI;
-if (process.env.NODE_ENV === 'test') {
-  mongodbURI = process.env.MONGODB_TEST_URI;
-} else {
-  mongodbURI = process.env.MONGODB_URI;
-  app.use(morgan('dev'));
-}
+app.use(morgan('dev'));
 
 // Add headers
 app.use((req, res, next) => {

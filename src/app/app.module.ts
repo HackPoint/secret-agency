@@ -4,17 +4,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AgentsService } from './shared/services/agents.service';
+import { AgentsListComponent } from './agents-list/agents-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgentsListComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AgentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

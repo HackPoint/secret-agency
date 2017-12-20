@@ -1,0 +1,43 @@
+$border-color: #CCC;
+table {
+  border: 1px solid $border-color;
+  border-radius: .2rem;
+  border-collapse: collapse;
+  color: #5d5d5d;
+  width: 100%;
+
+  thead {
+    th {
+      padding: .3rem 1rem;
+      div {
+        border-right: 1px solid $border-color;
+        padding: .3rem 0;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:first-child {
+        border-top: 2px solid $border-color;
+      }
+      td {
+        text-align: left;
+        border-top: 1px solid $border-color;
+        padding: .7rem;
+      }
+    }
+  }
+
+  tfoot {
+    tr {
+      td {
+        border-top: 2px solid $border-color;
+        text-align: right;
+        padding: .4rem 1rem;
+      }
+    }
+  }
+}

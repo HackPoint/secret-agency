@@ -1,1 +1,5 @@
-https://github.com/DavideViolante/Angular-Full-Stack/
+#Interview question
+
+###Part1
+###Part2
+###Part3 - not completed yet

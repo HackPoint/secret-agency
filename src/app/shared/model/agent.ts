@@ -1,5 +1,5 @@
 export interface Agent {
-  callName: string;
+  agent: string;
   country: string;
   address: string;
   date: number;

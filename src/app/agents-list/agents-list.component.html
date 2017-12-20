@@ -1,0 +1,23 @@
+<table>
+  <thead>
+  <tr>
+    <th><div>Agent ID</div></th>
+    <th><div>Country</div></th>
+    <th><div>Address</div></th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of agents">
+        <td>{{item.agent}}</td>
+        <td>{{item.country}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.date}}</td>
+      </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="4">{{ agents?.length }} missions</td>
+  </tr>
+  </tfoot>
+</table>
