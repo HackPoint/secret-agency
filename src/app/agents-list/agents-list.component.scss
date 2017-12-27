@@ -20,6 +20,13 @@ table {
 
   tbody {
     tr {
+      &.farthest {
+        color: red;
+      }
+      &.closest {
+        color: green;
+      }
+
       &:first-child {
         border-top: 2px solid $border-color;
       }
